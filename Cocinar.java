@@ -8,22 +8,22 @@ public class Cocinar implements Estado{
 
 	@Override
 	public void caminar(){
-		System.out.println("Operación invalida. El robot no puede caminar mientras esta cocinando.");
+		System.out.println("Operación invalida. El robot no puede caminar mientras esta cocinando.\n");
 	}
 
 	@Override
 	public void cocinar(){
-		System.out.println("El robot ya esta cocinando.");
+		System.out.println("El robot ya esta cocinando.\n");
 	}
 	@Override
 	public void apagar(){
-		System.out.println("El robot deja de cocinar y se apaga.");
+		System.out.println("El robot deja de cocinar y se apaga.\n");
 		robot.setEstado(new Apagado(robot));
 	}
 
 	@Override
 	public void encender(){
-		System.out.println("El robot ahora esta encendido.");
+		System.out.println("El robot ahora esta encendido.\n");
 		robot.setEstado(new Encendido(robot));
 	}
 }

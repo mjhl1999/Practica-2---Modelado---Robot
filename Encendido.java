@@ -8,24 +8,24 @@ public class Encendido implements Estado{
 
 	@Override
 	public void caminar(){
-		System.out.println("El robot ahora esta caminando.");
+		System.out.println("El robot ahora esta caminando.\n");
 		robot.setEstado(new Caminar(robot));
 	}
 
 	@Override
 	public void cocinar(){
-		System.out.println("El robot ahora esta cocinando.");
+		System.out.println("El robot ahora esta cocinando.\n");
 		robot.setEstado(new Cocinar(robot));
 	}
 
 	@Override
 	public void apagar(){
-		System.out.println("El robot se apaga.");
+		System.out.println("El robot se apaga.\n");
 		robot.setEstado(new Apagado(robot));
 	}
 
 	@Override
 	public void encender(){
-		System.out.println("El robot ya esta encendido.");
+		System.out.println("El robot ya esta encendido.\n");
 	}
 }

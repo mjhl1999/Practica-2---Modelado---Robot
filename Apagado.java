@@ -8,12 +8,12 @@ public class Apagado implements Estado{
 
 	@Override
 	public void caminar(){
-		System.out.println("Operación invalida. El robot no puede caminar mientras esta apagado.");
+		System.out.println("Operación invalida. El robot no puede caminar mientras esta apagado.\n");
 	}
 
 	@Override
 	public void cocinar(){
-		System.out.println("Operación invalida. El robot no puede cocinar mientras esta apagado.");
+		System.out.println("Operación invalida. El robot no puede cocinar mientras esta apagado.\n");
 	}
 
 	@Override
@@ -24,6 +24,6 @@ public class Apagado implements Estado{
 	@Override
 	public void encender(){
 		System.out.println("El robot ahora esta encendido.");
-		robot.setEstado(new Encendido(robot));
+		robot.setEstado(new Encendido());
 	}
 }

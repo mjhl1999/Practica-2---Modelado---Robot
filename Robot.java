@@ -5,8 +5,13 @@ public class Robot{
 		estado = new Apagado(this);
 	}
 
+	public Estado getEstado(){
+		return estado;
+	}
+
 	public void setEstado(Estado estado){
 		estado = this.estado;
+		System.out.println(estado);
 	}
 
 	public void camina(){
